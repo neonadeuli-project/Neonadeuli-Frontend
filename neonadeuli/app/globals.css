@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --h-header: 56px;
+  --h-tour: 145px;
+  --h-send: 56px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+      format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+body {
+  @apply text-neutrals-1300;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.title-1 {
+  @apply text-[32px] font-semibold leading-[40px];
+}
+.title-2 {
+  @apply text-[24px] font-semibold leading-[32px];
+}
+.heading {
+  @apply text-[20px] font-semibold leading-[28px];
+}
+.headline {
+  @apply text-[16px] font-medium leading-[24px];
+}
+.body-1 {
+  @apply text-[16px] font-medium leading-[22px];
+}
+.body-2 {
+  @apply text-[14px] leading-[20px];
+}
+.body-3 {
+  @apply text-[13px] leading-[20px];
+}
+.body-4 {
+  @apply text-[12px] leading-[16px];
+}
+
+.radius-m {
+  @apply rounded-[10px];
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.75) 50.43%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.bg-quiz {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    #ffffff 100%
+  );
+  backdrop-filter: blur(2px);
+}
